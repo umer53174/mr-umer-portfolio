@@ -1,0 +1,88 @@
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { ShieldCheck, Bug, Lock, Network } from "lucide-react";
+
+const highlights = [
+  { icon: ShieldCheck, label: "Penetration Testing", desc: "Web, network & mobile app security assessments" },
+  { icon: Bug, label: "Vulnerability Research", desc: "Identifying zero-days and security flaws" },
+  { icon: Lock, label: "Security Architecture", desc: "Designing robust and secure systems" },
+  { icon: Network, label: "Incident Response", desc: "Rapid threat detection and mitigation" },
+];
+
+const AboutSection = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: "-100px" });
+
+  return (
+    <section id="about" className="py-24 px-6 relative" ref={ref}>
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="mb-16"
+        >
+          <h2 className="font-mono text-3xl md:text-4xl font-bold mb-2">
+            <span className="text-primary text-glow">01.</span> About Me
+          </h2>
+          <div className="w-24 h-px bg-primary/50 mt-4" />
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <div className="cyber-card">
+              <div className="font-mono text-xs text-muted-foreground mb-4">
+                <span className="text-primary">root@portfolio</span>:<span className="text-accent">~</span>$ cat about.txt
+              </div>
+              <div className="space-y-4 text-muted-foreground font-sans leading-relaxed">
+                <p>
+                  I'm a passionate cybersecurity professional with expertise in offensive security, 
+                  threat analysis, and building secure digital infrastructure. My mission is to protect 
+                  organizations from evolving cyber threats.
+                </p>
+                <p>
+                  With hands-on experience in penetration testing, red teaming, and security auditing, 
+                  I help businesses identify vulnerabilities before malicious actors can exploit them.
+                </p>
+                <p>
+                  I hold certifications including <span className="text-primary">CEH</span>, 
+                  <span className="text-primary"> OSCP</span>, and 
+                  <span className="text-primary"> CompTIA Security+</span>, and I'm constantly 
+                  expanding my knowledge to stay ahead of emerging threats.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+          >
+            {highlights.map((item, i) => (
+              <motion.div
+                key={item.label}
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.4, delay: 0.5 + i * 0.1 }}
+                className="cyber-card group hover:border-primary transition-colors"
+              >
+                <item.icon className="w-8 h-8 text-primary mb-3 group-hover:text-glow transition-all" />
+                <h3 className="font-mono text-sm font-semibold text-foreground mb-1">{item.label}</h3>
+                <p className="text-xs text-muted-foreground">{item.desc}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;
