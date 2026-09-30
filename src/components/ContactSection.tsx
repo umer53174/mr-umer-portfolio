@@ -10,9 +10,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! I'll get back to you soon.", {
-      style: { background: "hsl(220 18% 8%)", border: "1px solid hsl(120 60% 20%)", color: "hsl(120 100% 90%)" },
-    });
+    toast.success("Message sent! I'll get back to you soon.");
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -68,11 +66,11 @@ const ContactSection = () => {
           </motion.div>
 
           <motion.form
-            initial={{ opacity: 0, x: 30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
             onSubmit={handleSubmit}
-            className="space-y-5"
+            className="space-y-5 min-w-0"
           >
             <div>
               <label className="font-mono text-xs text-muted-foreground mb-1.5 block">Name</label>
