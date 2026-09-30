@@ -4,32 +4,25 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: "Senior Security Analyst",
-    company: "CyberShield Corp",
-    period: "2022 — Present",
-    description: "Lead penetration testing engagements, conduct red team operations, and mentor junior analysts. Identified 50+ critical vulnerabilities across client infrastructure.",
-    tags: ["Red Teaming", "SIEM", "Threat Hunting"],
+    role: "Software QA Engineer",
+    company: "Companion Business Tech",
+    period: "",
+    description: "Performed systematic manual testing of a production transport application, identifying and documenting functional defects through structured test cases — a methodical, detail-driven investigation process directly transferable to alert triage. Tracked and prioritized defects by severity and impact, collaborating with developers on root-cause resolution — comparable to triage and escalation workflows in security operations.",
+    tags: ["Manual Testing", "Test Cases", "Defect Triage", "Severity & Impact"],
   },
   {
-    role: "Penetration Tester",
-    company: "SecureNet Solutions",
-    period: "2020 — 2022",
-    description: "Performed web application and network penetration tests. Developed custom exploitation tools and automated vulnerability scanning pipelines.",
-    tags: ["Web App Security", "API Testing", "Burp Suite"],
+    role: "MERN Stack Developer",
+    company: "DonSol",
+    period: "",
+    description: "Implemented JWT and OAuth-based authentication/authorization flows, gaining practical understanding of session management, token handling, and access control — concepts directly relevant to identity-related security investigations.",
+    tags: ["JWT", "OAuth", "Access Control", "Session Management"],
   },
   {
-    role: "SOC Analyst",
-    company: "DefensePoint Inc.",
-    period: "2018 — 2020",
-    description: "Monitored security events, investigated alerts, and coordinated incident response. Reduced false positive rates by 40% through tuning detection rules.",
-    tags: ["Incident Response", "Log Analysis", "Splunk"],
-  },
-  {
-    role: "Security Intern",
-    company: "TechGuard Labs",
-    period: "2017 — 2018",
-    description: "Assisted in vulnerability assessments, wrote security documentation, and performed basic security audits for small business clients.",
-    tags: ["Vulnerability Scanning", "Nessus", "Documentation"],
+    role: "Android Developer",
+    company: "",
+    period: "",
+    description: "Developed Android applications (Java/Kotlin) integrating third-party APIs; built and maintained a university LMS portal.",
+    tags: ["Java", "Kotlin", "Third-party APIs", "LMS Portal"],
   },
 ];
 
