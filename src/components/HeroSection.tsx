@@ -3,20 +3,20 @@ import { Shield, Terminal, ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-grid bg-scanline overflow-hidden">
+    <section className="relative min-h-[75svh] flex items-center justify-center bg-grid overflow-hidden py-24 md:py-20">
       {/* Floating decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           animate={{ y: [0, -20, 0], opacity: [0.1, 0.3, 0.1] }}
           transition={{ duration: 6, repeat: Infinity }}
-          className="absolute top-20 left-10 text-primary font-mono text-xs opacity-10"
+          className="absolute top-20 left-10 text-primary font-mono text-xs opacity-20"
         >
           {"01001000 01000001 01000011 01001011"}
         </motion.div>
         <motion.div
           animate={{ y: [0, 15, 0], opacity: [0.1, 0.2, 0.1] }}
           transition={{ duration: 8, repeat: Infinity }}
-          className="absolute bottom-40 right-20 text-primary font-mono text-xs opacity-10"
+          className="absolute bottom-40 right-20 text-primary font-mono text-xs opacity-20"
         >
           {"ssh root@secure.server"}
         </motion.div>
@@ -92,7 +92,7 @@ const HeroSection = () => {
       <motion.div
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-4 left-1/2 -translate-x-1/2"
       >
         <ChevronDown className="w-6 h-6 text-primary opacity-50" />
       </motion.div>

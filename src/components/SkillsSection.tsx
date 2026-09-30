@@ -73,7 +73,6 @@ const SkillsSection = () => {
                         animate={inView ? { width: `${skill.level}%` } : {}}
                         transition={{ duration: 1, delay: 0.5 + ci * 0.2 + si * 0.1, ease: "easeOut" }}
                         className="h-full bg-primary rounded-full"
-                        style={{ boxShadow: "0 0 8px hsl(120 100% 50% / 0.4)" }}
                       />
                     </div>
                   </div>

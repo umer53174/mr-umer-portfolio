@@ -10,9 +10,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! I'll get back to you soon.", {
-      style: { background: "hsl(220 18% 8%)", border: "1px solid hsl(120 60% 20%)", color: "hsl(120 100% 90%)" },
-    });
+    toast.success("Message sent! I'll get back to you soon.");
     setFormData({ name: "", email: "", message: "" });
   };
 
