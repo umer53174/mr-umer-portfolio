@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 font-mono text-primary text-glow font-bold text-lg">
           <Shield className="w-5 h-5" />
-          <span>&lt;CyberSec /&gt;</span>
+          <span>&lt;mr.umer /&gt;</span>
         </a>
 
         {/* Desktop */}

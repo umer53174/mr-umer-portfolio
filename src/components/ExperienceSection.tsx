@@ -19,7 +19,7 @@ const experiences = [
   },
   {
     role: "Android Developer",
-    company: "",
+    company: "BuildInSoft",
     period: "",
     description: "Developed Android applications (Java/Kotlin) integrating third-party APIs; built and maintained a university LMS portal.",
     tags: ["Java", "Kotlin", "Third-party APIs", "LMS Portal"],
