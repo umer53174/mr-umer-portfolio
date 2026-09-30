@@ -65,12 +65,16 @@ const ExperienceSection = () => {
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                     <div>
                       <h3 className="font-mono text-lg font-semibold text-foreground">{exp.role}</h3>
-                      <p className="text-primary font-mono text-sm flex items-center gap-2">
-                        <Briefcase className="w-3 h-3" />
-                        {exp.company}
-                      </p>
+                      {exp.company && (
+                        <p className="text-primary font-mono text-sm flex items-center gap-2">
+                          <Briefcase className="w-3 h-3" />
+                          {exp.company}
+                        </p>
+                      )}
                     </div>
-                    <span className="font-mono text-xs text-muted-foreground mt-1 sm:mt-0">{exp.period}</span>
+                    {exp.period && (
+                      <span className="font-mono text-xs text-muted-foreground mt-1 sm:mt-0">{exp.period}</span>
+                    )}
                   </div>
                   <p className="text-sm text-muted-foreground mb-4">{exp.description}</p>
                   <div className="flex flex-wrap gap-2">
