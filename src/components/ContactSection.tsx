@@ -44,7 +44,9 @@ const ContactSection = () => {
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="font-mono text-sm">hello@cybersec-portfolio.dev</span>
+                <a href="mailto:mr.umerirshad@gmail.com" className="font-mono text-sm hover:text-primary transition-colors">
+                  mr.umerirshad@gmail.com
+                </a>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary" />
