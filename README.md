@@ -1,16 +1,6 @@
-# CyberGuard Portfolio
+Muhammad Umer Portfolio
 
-So I want you to create a beautiful portfolio website. It will be a single-page website with different sectors. It contains  different sectors like About me, contact us,  Experience Projects, just like a portfolio website, as my domain is cybersecurity, so use a proper theme, also  design and develop it in wordpress it must look professional,beautiful etc
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/a7778d54-b34c-4e3a-9a58-b18a3f82a53a).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Aspiring SOC Analyst with an MS in Cyber Security and a background in software development and QA testing. Hands-on experience building detection use cases in a self-directed Splunk/Sentinel home lab, investigating simulated phishing and Windows-based incidents, and developing DeepFuseMal, a deep learning model for Android malware detection. Comfortable with log analysis, MITRE ATT&CK mapping, and Python-based automation; seeking to apply a strong technical foundation to entry-level SOC operations.
 
 ## Development
 
