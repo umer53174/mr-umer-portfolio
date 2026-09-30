@@ -41,19 +41,12 @@ const AboutSection = () => {
               </div>
               <div className="space-y-4 text-muted-foreground font-sans leading-relaxed">
                 <p>
-                  I'm a passionate cybersecurity professional with expertise in offensive security, 
-                  threat analysis, and building secure digital infrastructure. My mission is to protect 
-                  organizations from evolving cyber threats.
-                </p>
-                <p>
-                  With hands-on experience in penetration testing, red teaming, and security auditing, 
-                  I help businesses identify vulnerabilities before malicious actors can exploit them.
-                </p>
-                <p>
-                  I hold certifications including <span className="text-primary">CEH</span>, 
-                  <span className="text-primary"> OSCP</span>, and 
-                  <span className="text-primary"> CompTIA Security+</span>, and I'm constantly 
-                  expanding my knowledge to stay ahead of emerging threats.
+                  Aspiring SOC Analyst with an MS in Cyber Security and a background in software development
+                  and QA testing. Hands-on experience building detection use cases in a self-directed Splunk/Sentinel
+                  home lab, investigating simulated phishing and Windows-based incidents, and developing
+                  DeepFuseMal, a deep learning model for Android malware detection. Comfortable with log
+                  analysis, MITRE ATT&CK mapping, and Python-based automation; seeking to apply a strong
+                  technical foundation to entry-level SOC operations.
                 </p>
               </div>
             </div>
