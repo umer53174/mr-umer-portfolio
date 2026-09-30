@@ -16,14 +16,14 @@ const HeroSection = () => {
         <motion.div
           animate={{ y: [0, 15, 0], opacity: [0.1, 0.2, 0.1] }}
           transition={{ duration: 8, repeat: Infinity }}
-          className="absolute bottom-40 right-20 text-primary font-mono text-xs opacity-20"
+          className="absolute bottom-40 right-20 hidden sm:block text-primary font-mono text-xs opacity-20"
         >
           {"ssh root@secure.server"}
         </motion.div>
         <motion.div
           animate={{ y: [0, -10, 0], opacity: [0.05, 0.15, 0.05] }}
           transition={{ duration: 5, repeat: Infinity }}
-          className="absolute top-1/3 right-1/4 text-accent font-mono text-xs"
+          className="absolute top-1/3 right-1/4 hidden sm:block text-accent font-mono text-xs"
         >
           {">>> nmap -sV target"}
         </motion.div>

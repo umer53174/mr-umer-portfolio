@@ -70,7 +70,7 @@ const ContactSection = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
             onSubmit={handleSubmit}
-            className="space-y-5"
+            className="space-y-5 min-w-0"
           >
             <div>
               <label className="font-mono text-xs text-muted-foreground mb-1.5 block">Name</label>
