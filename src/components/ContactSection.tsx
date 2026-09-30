@@ -1,7 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+
 import { toast } from "sonner";
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
 
 const ContactSection = () => {
   const ref = useRef(null);
@@ -52,6 +53,15 @@ const ContactSection = () => {
                 <MapPin className="w-5 h-5 text-primary" />
                 <span className="font-mono text-sm">Remote / Worldwide</span>
               </div>
+
+
+  {/* 👇 ADD THIS NEW BLOCK FOR YOUR PHONE */}
+  <div className="flex items-center gap-3 text-muted-foreground">
+    <Phone className="w-5 h-5 text-primary" />
+    <a href="tel:+923275757939" className="font-mono text-sm hover:text-primary transition-colors">
+      +92 327 575 7939
+    </a>
+  </div>
             </div>
 
             <div className="flex gap-4">
