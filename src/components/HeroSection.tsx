@@ -25,7 +25,7 @@ const HeroSection = () => {
           transition={{ duration: 5, repeat: Infinity }}
           className="absolute top-1/3 right-1/4 hidden sm:block text-accent font-mono text-xs"
         >
-          {">>> nmap -sV target"}
+          {">>> sentinel: detect --threats"}
         </motion.div>
       </div>
 
@@ -62,8 +62,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-muted-foreground font-sans max-w-2xl mx-auto mb-10"
         >
-          Securing digital frontiers through penetration testing, vulnerability assessment, 
-          and building resilient security architectures.
+          Defending digital frontiers through threat detection, incident response,
+          and building resilient SOC operations.
         </motion.p>
 
         <motion.div

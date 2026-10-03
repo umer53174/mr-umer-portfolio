@@ -1,13 +1,27 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, Shield, Bug, Lock, Wifi } from "lucide-react";
+import { ExternalLink, Github, Shield, Brain, Terminal, Mail } from "lucide-react";
 
 const projects = [
   {
-    title: "VulnScanner Pro",
-    description: "Automated vulnerability scanner that identifies OWASP Top 10 vulnerabilities in web applications with custom payload generation and detailed reporting.",
-    tags: ["Python", "Selenium", "OWASP", "REST API"],
-    icon: Bug,
+    title: "DeepFuseMal",
+    description: "Deep learning model for Android malware detection, fusing static and behavioral features to classify malicious applications with high accuracy.",
+    tags: ["Python", "TensorFlow", "Android", "Machine Learning"],
+    icon: Brain,
+    link: "#",
+  },
+  {
+    title: "SOC Home Lab",
+    description: "Self-directed Splunk and Microsoft Sentinel lab with custom detection use cases for simulated phishing and Windows-based incidents.",
+    tags: ["Splunk", "Sentinel", "SPL / KQL", "Windows Event Logs"],
+    icon: Terminal,
+    link: "#",
+  },
+  {
+    title: "Phishing Incident Triage",
+    description: "Investigation workflows for simulated phishing incidents, including email header analysis, IOC enrichment, and MITRE ATT&CK mapping.",
+    tags: ["Email Headers", "VirusTotal", "MITRE ATT&CK", "Sentinel"],
+    icon: Mail,
     link: "#",
   },
   {
@@ -15,20 +29,6 @@ const projects = [
     description: "Network intrusion detection system using machine learning for anomaly detection. Processes 10K+ packets/second with 98% accuracy.",
     tags: ["Python", "TensorFlow", "Scapy", "ELK Stack"],
     icon: Shield,
-    link: "#",
-  },
-  {
-    title: "CryptoVault",
-    description: "End-to-end encrypted file storage solution with zero-knowledge architecture. Features AES-256 encryption and secure key management.",
-    tags: ["Go", "React", "AES-256", "Docker"],
-    icon: Lock,
-    link: "#",
-  },
-  {
-    title: "WiFi Auditor",
-    description: "Wireless network security auditing toolkit for identifying rogue access points, weak encryption, and network misconfigurations.",
-    tags: ["Python", "Aircrack-ng", "Bash", "Linux"],
-    icon: Wifi,
     link: "#",
   },
 ];

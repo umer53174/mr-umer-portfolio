@@ -5,9 +5,9 @@ import { ShieldCheck, Bug, Lock, Network, Download } from "lucide-react";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 const highlights = [
-  { icon: ShieldCheck, label: "Penetration Testing", desc: "Web, network & mobile app security assessments" },
-  { icon: Bug, label: "Vulnerability Research", desc: "Identifying zero-days and security flaws" },
-  { icon: Lock, label: "Security Architecture", desc: "Designing robust and secure systems" },
+  { icon: ShieldCheck, label: "Threat Detection & Monitoring", desc: "SIEM-based log analysis and alert triage" },
+  { icon: Bug, label: "Incident Investigation", desc: "Phishing & Windows-based incident handling" },
+  { icon: Lock, label: "Detection Engineering", desc: "Building detection use cases in Splunk & Sentinel" },
   { icon: Network, label: "Incident Response", desc: "Rapid threat detection and mitigation" },
 ];
 
