@@ -25,7 +25,7 @@ const ContactSection = () => {
           className="mb-16"
         >
           <h2 className="font-mono text-3xl md:text-4xl font-bold mb-2">
-            <span className="text-primary text-glow">05.</span> Contact
+            <span className="text-primary text-glow">06.</span> Contact
           </h2>
           <div className="w-24 h-px bg-primary/50 mt-4" />
         </motion.div>

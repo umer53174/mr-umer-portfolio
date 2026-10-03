@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ShieldCheck, Bug, Lock, Network } from "lucide-react";
+import { ShieldCheck, Bug, Lock, Network, Download } from "lucide-react";
+import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 const highlights = [
   { icon: ShieldCheck, label: "Penetration Testing", desc: "Web, network & mobile app security assessments" },
@@ -49,6 +50,15 @@ const AboutSection = () => {
                   technical foundation to entry-level SOC operations.
                 </p>
               </div>
+              <a
+                href={resumeAsset.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="Muhammad-Umer-Resume.pdf"
+                className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-primary text-primary-foreground font-mono text-sm font-semibold hover:opacity-90 transition-opacity"
+              >
+                <Download className="w-4 h-4" /> Download Resume
+              </a>
             </div>
           </motion.div>
 
