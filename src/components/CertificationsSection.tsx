@@ -3,11 +3,31 @@ import { useRef } from "react";
 import { Award } from "lucide-react";
 
 const certs = [
-  { name: "ISO/IEC 27001:2022 Information Security Associate", issuer: "SkillFront" },
-  { name: "Certified in Cybersecurity (CC)", issuer: "(ISC)²" },
-  { name: "Systems Security Certified Practitioner (SSCP)", issuer: "(ISC)²" },
-  { name: "Blue Team Junior Analyst", issuer: "Security Blue Team" },
-  { name: "Security Operations Center (SOC)", issuer: "Professional Certificate" },
+  {
+    name: "ISO/IEC 27001:2022 Information Security Associate",
+    issuer: "SkillFront",
+    url: "https://www.skillfront.com/certifications/SkillFront-SFE01655c0be85f5-67872044739043.pdf",
+  },
+  {
+    name: "Certified in Cybersecurity (CC)",
+    issuer: "(ISC)²",
+    url: "https://www.coursera.org/account/accomplishments/specialization/certificate/AAPUCTJZYIJN",
+  },
+  {
+    name: "Systems Security Certified Practitioner (SSCP)",
+    issuer: "(ISC)²",
+    url: "https://www.coursera.org/account/accomplishments/specialization/CACSR4RRANZP",
+  },
+  {
+    name: "Blue Team Junior Analyst",
+    issuer: "Security Blue Team",
+    url: "https://elearning.centri.org/home/certificate/645888852",
+  },
+  {
+    name: "Security Operations Center (SOC)",
+    issuer: "Professional Certificate",
+    url: "https://www.coursera.org/account/accomplishments/verify/SG9SGF3KVMEA",
+  },
 ];
 
 const CertificationsSection = () => {
