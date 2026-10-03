@@ -3,30 +3,30 @@ import { useRef } from "react";
 
 const skillCategories = [
   {
-    category: "Offensive Security",
-    skills: [
-      { name: "Penetration Testing", level: 95 },
-      { name: "Red Teaming", level: 88 },
-      { name: "Social Engineering", level: 82 },
-      { name: "Exploit Development", level: 78 },
-    ],
-  },
-  {
-    category: "Defensive Security",
+    category: "SOC Operations",
     skills: [
       { name: "Incident Response", level: 90 },
-      { name: "SIEM Management", level: 85 },
-      { name: "Threat Intelligence", level: 87 },
-      { name: "Malware Analysis", level: 75 },
+      { name: "Log Analysis", level: 92 },
+      { name: "Threat Hunting", level: 84 },
+      { name: "MITRE ATT&CK Mapping", level: 88 },
     ],
   },
   {
-    category: "Tools & Technologies",
+    category: "Defensive Platforms",
     skills: [
-      { name: "Burp Suite / OWASP ZAP", level: 92 },
-      { name: "Metasploit / Cobalt Strike", level: 88 },
-      { name: "Wireshark / Nmap", level: 94 },
-      { name: "Python / Bash Scripting", level: 90 },
+      { name: "SIEM (Splunk / Sentinel)", level: 90 },
+      { name: "SOAR Automation", level: 80 },
+      { name: "EDR (Endpoint Detection)", level: 82 },
+      { name: "Firewalls & IDS/IPS", level: 85 },
+    ],
+  },
+  {
+    category: "Tools & Scripting",
+    skills: [
+      { name: "Wireshark / Packet Analysis", level: 88 },
+      { name: "Python / Bash Automation", level: 90 },
+      { name: "KQL / SPL Querying", level: 86 },
+      { name: "VirusTotal / Threat Intel", level: 84 },
     ],
   },
 ];
