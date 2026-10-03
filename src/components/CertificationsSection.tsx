@@ -51,19 +51,25 @@ const CertificationsSection = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {certs.map((c, i) => (
-            <motion.div
+            <motion.a
               key={c.name}
+              href={c.url}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
               className="cyber-card group hover:border-primary transition-colors"
             >
-              <Award className="w-8 h-8 text-primary mb-4" />
+              <div className="flex items-start justify-between mb-4">
+                <Award className="w-8 h-8 text-primary" />
+                <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
               <h3 className="font-mono text-base font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                 {c.name}
               </h3>
               <p className="text-xs font-mono text-muted-foreground">{c.issuer}</p>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
