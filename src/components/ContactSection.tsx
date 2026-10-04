@@ -2,7 +2,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 
 import { toast } from "sonner";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
 
 const ContactSection = () => {
   const ref = useRef(null);
@@ -65,7 +65,7 @@ const ContactSection = () => {
             </div>
 
             <div className="flex gap-4">
-              {[Github, Linkedin, Twitter].map((Icon, i) => (
+              {[Github, Linkedin].map((Icon, i) => (
                 <a
                   key={i}
                   href="#"

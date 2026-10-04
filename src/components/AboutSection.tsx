@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ShieldCheck, Bug, Lock, Network, Download } from "lucide-react";
-import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 const highlights = [
   { icon: ShieldCheck, label: "Threat Detection & Monitoring", desc: "SIEM-based log analysis and alert triage" },
@@ -51,7 +50,7 @@ const AboutSection = () => {
                 </p>
               </div>
               <a
-                href={resumeAsset.url}
+                href="/Muhammad-Umer-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="Muhammad-Umer-Resume.pdf"
