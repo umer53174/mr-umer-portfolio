@@ -65,15 +65,24 @@ const ContactSection = () => {
             </div>
 
             <div className="flex gap-4">
-              {[Github, Linkedin].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-10 h-10 flex items-center justify-center border border-border rounded-lg text-muted-foreground hover:text-primary hover:border-primary hover:border-glow transition-all"
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
+              <a
+                href="https://github.com/umer53174"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="w-10 h-10 flex items-center justify-center border border-border rounded-lg text-muted-foreground hover:text-primary hover:border-primary hover:border-glow transition-all"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/umerirshad/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="w-10 h-10 flex items-center justify-center border border-border rounded-lg text-muted-foreground hover:text-primary hover:border-primary hover:border-glow transition-all"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
             </div>
           </motion.div>
 
